@@ -3,8 +3,8 @@
 //
 
 #include "BatteryMower.h"
-BatteryMower::BatteryMower(std::string name, int batteryLife, float weight, std::string color) :
-        Devices(batteryLife),
+BatteryMower::BatteryMower(std::string name, int batteryCapacity, float weight, std::string color) :
+        Devices(name, batteryCapacity),
         Appliances(name, weight),
         _color(color)
 {
@@ -12,9 +12,9 @@ BatteryMower::BatteryMower(std::string name, int batteryLife, float weight, std:
 
 void BatteryMower::showSpec()
 {
-    std::cout << "Battery mower: " << _name << std::endl
-            << "Weight: " << _weight << " kg" << std::endl
-            << "Battery Life: " << _batteryLife << " kg" << std::endl
-            << "Color: " << _color << std::endl
-            << std::endl;
+    std::cout << "Battery mower: " << Appliances::_name << std::endl
+              << "Weight: " << _weight << " kg" << std::endl
+              << "Battery capacity: " << _batteryCapacity << " mAh" << std::endl
+              << "Color: " << _color << std::endl
+              << std::endl;
 }

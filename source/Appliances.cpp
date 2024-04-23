@@ -10,5 +10,6 @@ Appliances::Appliances(std::string name, float weight) : _name(name), _weight(we
 
 void Appliances::showSpec()
 {
-    std::cout << "!!!Weight: " << _weight << std::endl;
+    std::cout << "!!!Base devices output for " << _name << std::endl;
+    std::cout << "!!!Should be overrided" << std::endl;
 }

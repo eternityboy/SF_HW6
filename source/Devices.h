@@ -9,10 +9,9 @@ class Devices : virtual public IElectronics
 {
 public:
     Devices(std::string name, int batteryLife);
-    Devices(int batteryLife);
     virtual void showSpec() override;
 
 protected:
     std::string _name;
-    int _batteryLife;
+    int _batteryCapacity;
 };

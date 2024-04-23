@@ -8,11 +8,10 @@
 class Computers final : public Devices
 {
 public:
-    Computers(std::string name, int batteryLife, float weight, float monitorWidth);
+    Computers(std::string name, int batteryCapacity, float weight, float monitorWidth);
     virtual void showSpec() override;
 
 private:
-    int _batteryLife;
-    int _weight;
-    int _monitorWidth;
+    float _weight;
+    float _monitorWidth;
 };

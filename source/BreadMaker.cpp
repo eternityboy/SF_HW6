@@ -11,7 +11,7 @@ BreadMaker::BreadMaker(std::string name, float weight, short programsNumber) :
 
 void BreadMaker::showSpec()
 {
-    std::cout << "Bread Maker" << std::endl
+    std::cout << "Bread Maker: " << _name << std::endl
               << "Weight: " << _weight << " kg" << std::endl
               << "Number of Available Programs: " << _programsNumber << std::endl
               << std::endl;

@@ -4,16 +4,12 @@
 
 #include "Devices.h"
 
-Devices::Devices(std::string name, int batteryLife) : _name(name), _batteryLife(batteryLife)
-{
-}
-
-Devices::Devices(int batteryLife) : _batteryLife(batteryLife)
+Devices::Devices(std::string name, int batteryLife) : _name(name), _batteryCapacity(batteryLife)
 {
 }
 
 void Devices::showSpec()
 {
-    std::cout << "!!!Brand: " << _name << std::endl;
-    std::cout << "!!!Battery Life: " << _batteryLife << std::endl;
+    std::cout << "!!!Base devices output for " << _name << std::endl;
+    std::cout << "!!!Should be overrided" << std::endl;
 }

@@ -11,7 +11,7 @@ Mixer::Mixer(std::string name, float weight, short maxRPM) :
 
 void Mixer::showSpec()
 {
-    std::cout << "Mixer" << std::endl
+    std::cout << "Mixer: " << _name << std::endl
               << "Weight: " << _weight << " kg" << std::endl
               << "Maximum RPM: " << _maxRPM << " rev/sec" << std::endl
               << std::endl;

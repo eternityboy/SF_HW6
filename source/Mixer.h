@@ -12,6 +12,5 @@ public:
     virtual void showSpec() override;
 
 private:
-    std::string _name;
     short _maxRPM;
 };

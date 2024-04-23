@@ -4,8 +4,8 @@
 
 #include "Players.h"
 
-Players::Players(std::string name, int batteryLife, int diskSize) :
-        Devices(name, batteryLife),
+Players::Players(std::string name, int batteryCapacity, int diskSize) :
+        Devices(name, batteryCapacity),
         _diskSize(diskSize)
 {
 }
@@ -13,7 +13,7 @@ Players::Players(std::string name, int batteryLife, int diskSize) :
 void Players::showSpec()
 {
     std::cout << "Player: " << _name << std::endl
-              << "Battery life: " << _batteryLife << " mAh" << std::endl
-              << "Memory Capacity: " << _diskSize << " Gb" << std::endl
+              << "Battery capacity: " << _batteryCapacity << " mAh" << std::endl
+              << "Memory capacity: " << _diskSize << " Gb" << std::endl
               << std::endl;
 }
