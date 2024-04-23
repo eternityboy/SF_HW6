@@ -8,6 +8,10 @@ Devices::Devices(std::string name, int batteryLife) : _name(name), _batteryLife(
 {
 }
 
+Devices::Devices(int batteryLife) : _batteryLife(batteryLife)
+{
+}
+
 void Devices::showSpec()
 {
     std::cout << "!!!Brand: " << _name << std::endl;

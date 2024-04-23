@@ -3,8 +3,8 @@
 //
 
 #include "BreadMaker.h"
-BreadMaker::BreadMaker(float weight, short programsNumber) :
-        Appliances(weight),
+BreadMaker::BreadMaker(std::string name, float weight, short programsNumber) :
+        Appliances(name, weight),
         _programsNumber(programsNumber)
 {
 }

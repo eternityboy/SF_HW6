@@ -8,9 +8,10 @@
 class Mixer final : public Appliances
 {
 public:
-    Mixer(float weight, short maxRPM);
+    Mixer(std::string name, float weight, short maxRPM);
     virtual void showSpec() override;
 
 private:
+    std::string _name;
     short _maxRPM;
 };

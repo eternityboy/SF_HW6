@@ -3,8 +3,8 @@
 //
 
 #include "Mixer.h"
-Mixer::Mixer(float weight, short maxRPM) :
-        Appliances(weight),
+Mixer::Mixer(std::string name, float weight, short maxRPM) :
+        Appliances(name, weight),
         _maxRPM(maxRPM)
 {
 }

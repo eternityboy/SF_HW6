@@ -4,8 +4,8 @@
 
 #include "BatteryMower.h"
 BatteryMower::BatteryMower(std::string name, int batteryLife, float weight, std::string color) :
-        Devices(name, batteryLife),
-        Appliances(weight),
+        Devices(batteryLife),
+        Appliances(name, weight),
         _color(color)
 {
 }

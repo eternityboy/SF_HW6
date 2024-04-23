@@ -4,7 +4,7 @@
 
 #include "Appliances.h"
 
-Appliances::Appliances(float weight) : _weight(weight)
+Appliances::Appliances(std::string name, float weight) : _name(name), _weight(weight)
 {
 }
 
