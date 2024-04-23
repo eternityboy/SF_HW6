@@ -8,10 +8,9 @@
 class Appliances : virtual public IElectronics
 {
 public:
-    Appliances (std::string name, float weight);
+    Appliances (float weight);
     void showSpec() override;
 
 protected:
-    std::string _name;
     float _weight;
 };

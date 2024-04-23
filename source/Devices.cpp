@@ -4,11 +4,12 @@
 
 #include "Devices.h"
 
-Devices::Devices(int batteryLife) : _batteryLife(batteryLife)
+Devices::Devices(std::string name, int batteryLife) : _name(name), _batteryLife(batteryLife)
 {
 }
 
 void Devices::showSpec()
 {
-    std::cout << "Battery Life: " << _batteryLife << std::endl;
+    std::cout << "!!!Brand: " << _name << std::endl;
+    std::cout << "!!!Battery Life: " << _batteryLife << std::endl;
 }

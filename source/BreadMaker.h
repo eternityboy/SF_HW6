@@ -8,7 +8,7 @@
 class BreadMaker final : public Appliances
 {
 public:
-    BreadMaker(std::string name, float weight, short programsNumber);
+    BreadMaker(float weight, short programsNumber);
     virtual void showSpec() override;
 
 private:

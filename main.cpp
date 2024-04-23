@@ -17,21 +17,21 @@ int main()
 {
     IElectronics* electronics[5];
 
-    electronics[0] = new Players("iPod", 50, 14);
-    electronics[1] = new Computers("MacBook Pro", 50, 1.55, 14.4);
-    electronics[2] = new BreadMaker("Redmond", 2.5, 10);
-    electronics[3] = new Mixer("Bosch", 2.5, 1200);
-    electronics[4] = new BatteryMower("Greenworks", 25, 4.5, "Green");
+    electronics[0] = new Players("iPod", 50, 160);
+    electronics[1] = new Computers("MacBook Pro", 3485, 1.55, 14.4);
+    electronics[2] = new BreadMaker(2.5, 10);
+    electronics[3] = new Mixer(2.5, 1200);
+    electronics[4] = new BatteryMower("Greenworks", 4, 4.5, "Green");
 
     bool open = true;
     while (open)
     {
         const std::string chooseProductMessage = "Choose product :\n"
-                                                 "1 - computer\n"
-                                                 "2 - mobile\n"
-                                                 "3 - bread maker\n"
-                                                 "4 - mixer\n"
-                                                 "5 - battery mower\n"
+                                                 "1 - Player\n"
+                                                 "2 - Computer\n"
+                                                 "3 - Bread maker\n"
+                                                 "4 - Mixer\n"
+                                                 "5 - Battery mower\n"
                                                  "0 - EXIT";
         std::cout << chooseProductMessage << std::endl;
         int choice;

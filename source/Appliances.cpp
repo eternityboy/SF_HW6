@@ -4,11 +4,11 @@
 
 #include "Appliances.h"
 
-Appliances::Appliances(float weight) : _name(name), _weight(weight)
+Appliances::Appliances(float weight) : _weight(weight)
 {
 }
 
 void Appliances::showSpec()
 {
-    std::cout << "Weight: " << _weight << std::endl;
+    std::cout << "!!!Weight: " << _weight << std::endl;
 }

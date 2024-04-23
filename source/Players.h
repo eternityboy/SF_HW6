@@ -8,7 +8,7 @@
 class Players final : public Devices
 {
 public:
-    Players(int batteryLife, int diskSize);
+    Players(std::string name, int batteryLife, int diskSize);
     virtual void showSpec() override;
 
 private:
